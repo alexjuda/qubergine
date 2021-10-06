@@ -21,9 +21,16 @@ This is the input:
 
 Measurement of each qubit yields `0` or `1`.
 Measuring multiple qubits yields a bitstring, like `0010` or `1010`.
-You tell the quantum computer to run the circuit multiple times record how qubit were measured.
+You tell the quantum computer to run the circuit multiple times and record how each qubit were measured.
+It responds with a list of measured bistrings.
 
 If you ran the above 4-qubit circuit 1000 times, output from the quantum computer could look like this:
+
+{{% listing bitstrings.csv %}}
+
+You can then plot the distribution of measured bistrings.
+It's a sample-based estimate of what are the underlying probabilities of measuring a given bitstring.
+These probabilities are often considered the output of a quantum computation.
 
 {{% chart
     Bar
@@ -33,3 +40,4 @@ If you ran the above 4-qubit circuit 1000 times, output from the quantum compute
 None, [46, 285, 978, 323, 626, 117, 18, 145, 391, 483, 896, 587, 904, 607, 77, 991]
 
 {{% /chart %}}
+
