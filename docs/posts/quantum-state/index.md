@@ -13,7 +13,12 @@
 
 This circuit sets its qubit into a state that depends on the knob.
 
+
+<div id="washer"></div>
 [here we will have the quantum washer]
+
+<script src="/quantum-state.js">
+</script>
 
 A quantum computer won't tell us the output state directly, we only measure one of the basis states that the qubit's state collapsed to.
 We can repeat the procedure multiple times to get a sense of what's the probability of observing each basis state.
